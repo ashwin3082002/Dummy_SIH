@@ -45,6 +45,7 @@ header h1 a img{
 	padding-left:10px;
 	width:90px;
 	height:60px;
+	overflow: hidden;
 }
 header nav{
 	width:800px;
@@ -517,13 +518,12 @@ footer span a{
 	padding-top: 0px;
 }
 .dashboard-link{
-	width: 100%;
+	width:92%;
 	text-align: left;
 	padding: 10px;
 }
 .dashboard-link ul{
 	list-style: none;
-	
 }
 .dashboard-link ul li{
 	display: inline-block;
@@ -539,6 +539,10 @@ footer span a{
 }
 .dashboard-link ul li a:hover{
 	color: #000000;
+}
+.dashboard-link ul li .logout{
+	background-color: red;
+	color: white;
 }
 .dashboard-body{
 	width: 100%;
@@ -860,7 +864,7 @@ footer span a{
 	scale:0.9;
 }
 .form form input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
-	width:270px;
+	width:80%;
 }
 .form form textarea{
 	width:270px;
@@ -879,11 +883,11 @@ footer span a{
 
 
 .dashboard-body .profile .details .label{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	width: 200px;
 }
 .dashboard-body .profile .details p{
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 
