@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+	<script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+		
+		<header>
+			<h1><a href="#"><img src="/assets/img/logo.png"></a></h1>
+
+			<nav id="navbar">
+				<ul>
+					<li class="navclose"><button onclick="navbtn()">x</button></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="nav-icon" id="nav-icon">
+				<button onclick="navbtn()">
+
+					<div>
+					</div>
+
+					<div>
+					</div>
+
+					<div>
+					</div>
+
+				</button>
+			</div>
+
+		</header>
+		<main>
+			<div class="headspace"></div>
+
+            
+
+			<div class="dashboard-wrapper">
+
+                <p>ADMIN DASHBOARD</p>
+
+                <div class="dashboard">
+
+                    <div class="dashboard-head">
+
+                        <div class="dashboard-head-top">
+                            
+
+
+                        </div>
+
+                        <div class="dashboard-head-bottom">
+
+                            
+
+                        </div>
+
+                    </div>
+
+                    <div class="profile-pic">
+
+                        <img src="">
+
+                    </div>
+
+                    <div class="dashboard-nav">
+
+                        <p class="dashboard-name">ASHWIN</p>
+
+                        <div class="dashboard-link">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Create Profile</a></li>
+                                <li><a href="#">Search profile</a></li>
+                                <li><a class="logout" href="/signout">Logout</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-body" id="dashboard-body">
+
+
+
+                        <div class="search-profile" id="search-profile">
+
+                            <h1>SEARCH PROFILE</h1>
+
+                            <div class="search-profile-container">
+
+                                <div class="profile-form-container">
+
+                                    <div class="profile-form">
+
+                                        <form action="" method="post">
+                                            
+                                            <label for="ins-name">INSTITUTION ID:</label>
+                    
+                                            <br>
+                    
+                                            <input type="text" id="institution-id" name="institution-id" required>
+                    
+                                            <br>
+                                            <br>
+
+                                            <input type="submit" value="SEARCH">
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="profile-form-container" id="search-results-container" style="display: none;">
+
+                                    <div class="profile-form">
+
+                                        <div class="search-result">
+
+                                            <div class="search-res">
+                                            <div class="pit"><p>INSTITUTION NAME:</p><p>{name}</p></div>
+                                            <div class="pit"><p>INSTITUTION ID:</p><p>{id}</p></div>
+                                            <div class="pit"><p>INSTITUTION ADDRESS:</p><p>{address}</p></div>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="srcbtn">
+
+                                                <button>VIEW</button>
+
+                                            </div>
+
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                                
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+		</main>
+		<footer>
+			<p>&#169; &nbsp; 2022 &nbsp; <span><a href="#">SIP.COM</a></span></p>
+		</footer>
+
+	</div>
+</body>
+</html>
