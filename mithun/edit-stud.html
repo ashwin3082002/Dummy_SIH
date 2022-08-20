@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+	<script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+		
+		<header>
+			<h1><a href="#"><img src="logo.png"></a></h1>
+
+			<nav id="navbar">
+				<ul>
+					<li class="navclose"><button onclick="navbtn()">x</button></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="nav-icon" id="nav-icon">
+				<button onclick="navbtn()">
+
+					<div>
+					</div>
+
+					<div>
+					</div>
+
+					<div>
+					</div>
+
+				</button>
+			</div>
+
+		</header>
+		<main>
+			<div class="headspace"></div>
+
+
+
+
+
+            <div class="dashboard-wrapper">
+
+                <p>INSTITUTION DASHBOARD</p>
+
+                <div class="dashboard">
+
+                    <div class="dashboard-head">
+
+                        <div class="dashboard-head-top">
+                            
+
+
+                        </div>
+
+                        <div class="dashboard-head-bottom">
+
+                            
+
+                        </div>
+
+                    </div>
+
+                    <div class="profile-pic">
+
+                        <img src="">
+
+                    </div>
+
+                    <div class="dashboard-nav">
+
+                        <p class="dashboard-name">PANIMALAR ENGINEERING COLLEGE</p>
+                        <p class="dashboard-id">CURRENT NO OF STUDENTS: 2000</p>
+
+                        <div class="dashboard-link">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Create Profile</a></li>
+                                <li><a href="#">Search profile</a></li>
+                                <li><a class="logout" href="/signout">Logout</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-body" id="dashboard-body">
+
+                       
+                        <div class="create-profile" id="create-profile">
+
+                            <h1>EDIT STUDENT PROFILE</h1>
+
+                            <div class="profile-form-container">
+
+                                <div class="profile-form">
+        
+                                    <form action="" method="post">
+                                        
+                                        <label for="ins-name">STUDENT NAME:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="stu-name" name="stu-name" value="{i.name}" required>
+                
+                                        <br>
+                                        <br>
+
+                                        <label for="ins-name">DOB:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="dob" name="dob" value="{enter}"  required>
+                
+                                        <br>
+                                        <br>
+
+                                        <label for="ins-name">FATHER/MOTHER/GAURDIAN NAME:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="pgname" name="pgname" value="{enter}"  required>
+                
+                                        <br>
+                                        <br>
+
+                                        <label for="adhaar">ADHAAR NO:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="adhaar" name="adhaar" value="{enter}"  required>
+                
+                                        <br>
+                                        <br>
+
+                                        <label>GENDER:</label>
+
+                                        <br>
+
+                                        <select name="type" id="gender" required>
+                                            <option value="selected" selected hidden>{type}</option>
+                                            <option value="options">SELECT OPTION</option>
+                                            <option value="male">MALE</option>
+                                            <option value="female">FEMALE</option>
+                                          </select>
+
+                                        <br>
+                                        <br>
+                
+                                        <label for="email">EMAIL:</label>
+                
+                                        <br>
+                
+                                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  value="{enter}" required>
+                
+                                        <br>
+                                        <br>
+
+                                        <label for="contact">CONTACT NO:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="contact" name="contact"  value="{enter}" required>
+
+                                        <br>
+                                        <br>
+
+                                        <label for="comment">ADDRESS:</label>
+
+                                        <br>
+
+                                        <textarea id="comment" name="comment"  value="{enter}" required></textarea>
+
+                                        <br>
+                                        <br>
+
+                                        <label for="city">CITY:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="city" name="city" value="{enter}"  required>
+
+                                        <br>
+                                        <br>
+
+                                        <label for="state">STATE:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="state" name="state" value="{enter}"   required>
+
+                                        <br>
+                                        <br>
+
+                                        <label for="pincode">PINCODE:</label>
+                
+                                        <br>
+                
+                                        <input type="text" id="pincode" name="pincode" value="{enter}"  required>
+
+                                        <br>
+                                        <br>
+                
+                                        <input type="submit" value="EDIT">
+                
+                                    </form>
+                
+                                </div>
+                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+		</main>
+		<footer>
+			<p>&#169; &nbsp; 2022 &nbsp; <span><a href="#">SIP.COM</a></span></p>
+		</footer>
+
+	</div>
+</body>
+</html>
