@@ -427,8 +427,11 @@ footer span a{
 	padding:10px;
 	font-size:1.2rem;
 }
-.login-page form p{
-	padding-bottom:30px;
+.login-page form .login-credential input[type="date"]{
+	width: 80%;
+	text-align: left;
+	padding: 10px;
+	font-size: 1.2rem;
 }
 .login-page form input[type="submit"]{
 	text-align:center;
