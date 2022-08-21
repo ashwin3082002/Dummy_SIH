@@ -350,6 +350,13 @@ footer span a{
 	padding:8px;
 	width:80%;
 }
+.profile-form form input[type="number"]{
+	width: 80%;
+	border-radius: 10px;
+	border: solid 1px #565a61 ;
+	padding: 5px;
+}
+
 .profile-form form select{
 	border-radius:10px;
 	border:solid 1px #565a61;
