@@ -102,7 +102,7 @@
 
                         <div class="search-profile" id="search-profile">
 
-                            <h1>SEARCH DOCUMENT </h1>
+                            <h1>DOCUMENT REQUEST</h1>
 
                             <div class="search-profile-container">
 
@@ -112,14 +112,19 @@
 
                                         <form action="" method="post">
                                             
-                                            <label for="ins-name">INSTITUTION ID:</label>
-                    
-                                            <br>
-                    
-                                            <input type="text" id="institution-id" name="institution-id" required>
-                    
-                                            <br>
-                                            <br>
+                                            <label>DOCUMENT STATUS:</label>
+
+                                        <br>
+
+                                        <select name="type" id="type" required>
+                                            <option value="options" hidden>SELECT OPTION</option>
+                                            <option value="options">PENDING</option>
+                                            <option value="options">COMPLETED</option>
+                                            
+                                          </select>
+
+                                        <br>
+                                        <br>
 
                                             <input type="submit" value="SEARCH">
 
@@ -127,27 +132,52 @@
 
                                     </div>
 
+                                    <div class="profile-form">
+
+                                        <form action="" method="post">
+                                            
+                                            <label>DOCUMENT ID:</label>
+
+                                        <br>
+
+                                        <input type="text" for="doc-id">
+
+                                        <br>
+                                        <br>
+
+                                            <input type="submit" value="ACCEPT">
+
+                                            &nbsp;
+                                            &nbsp;
+
+                                            <input type="submit" value="REJECT">
+
+                                        </form>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="profile-form-container" id="search-results-container" style="display: none;">
+                                <div class="profile-form-container" id="search-results-container" >
 
                                     <div class="profile-form">
 
                                         <div class="search-result">
 
-                                            <div class="search-res">
-                                            <div class="pit"><p>INSTITUTION NAME:</p><p>{name}</p></div>
-                                            <div class="pit"><p>INSTITUTION ID:</p><p>{id}</p></div>
-                                            <div class="pit"><p>INSTITUTION ADDRESS:</p><p>{address}</p></div>
-                                            </div>
-
-                                            <br>
-
-                                            <div class="srcbtn">
-
-                                                <button>VIEW</button>
-
-                                            </div>
+                                            <table>
+                                                <tr>
+                                                  <th>DOCUMENT ID</th>
+                                                  <th>STUDENT ID:</th>
+                                                  <th>DOCUMENT TYPE:</th>
+                                                  <th>REASON:</th>
+                                                </tr>
+                                                <tr>
+                                                  <td>{{}}</td>
+                                                  <td>{{}}</td>
+                                                  <td>{{}}</td>
+                                                  <td>{{}}</td>
+                                                </tr>
+                                              </table>
 
                                         </div>
                                         
